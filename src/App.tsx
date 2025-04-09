@@ -1,15 +1,10 @@
 import { useState } from "react";
-import UsernameInput from "./src/components/UsernameInput";
-import RepoList from "./src/components/RepoList";
-import CommitsChart from "./src/components/CommitsChart";
-import StatsAndMetrics from "./src/components/StatsAndMetrics";
-import UserProfileCard from "./src/components/UserProfileCard";
-import {
-  Tabs,
-  TabsList,
-  TabsTrigger,
-  TabsContent,
-} from "./src/components/ui/tabs";
+import UsernameInput from "@/components/UsernameInput";
+import RepoList from "@/components/RepoList";
+import CommitsChart from "@/components/CommitsChart";
+import StatsAndMetrics from "@/components/StatsAndMetrics";
+import UserProfileCard from "@/components/UserProfileCard";
+import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 import axios from "axios";
 import { Repo, CommitData, LanguageStats, ProfileStats } from "./types";
 

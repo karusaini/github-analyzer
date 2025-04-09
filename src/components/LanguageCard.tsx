@@ -6,7 +6,7 @@ import {
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
-} from "../components/ui/dropdown-menu";
+} from "@/components/ui/dropdown-menu";
 import { ChevronDown } from "lucide-react";
 
 interface SelectProps {
@@ -30,7 +30,10 @@ const LanguageCard: React.FC<SelectProps> = ({ options, label, onChange }) => {
           <h3 className="text-lg font-semibold text-gray-800">{label}</h3>
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
-              <Button variant="outline" className="flex justify-between items-center w-full">
+              <Button
+                variant="outline"
+                className="flex justify-between items-center w-full"
+              >
                 {selectedOption}
                 <ChevronDown className="ml-2 h-4 w-4" />
               </Button>
@@ -40,7 +43,10 @@ const LanguageCard: React.FC<SelectProps> = ({ options, label, onChange }) => {
                 All
               </DropdownMenuItem>
               {options.map((option, index) => (
-                <DropdownMenuItem key={index} onClick={() => handleChange(option)}>
+                <DropdownMenuItem
+                  key={index}
+                  onClick={() => handleChange(option)}
+                >
                   {option}
                 </DropdownMenuItem>
               ))}
