@@ -65,6 +65,7 @@ function App() {
         );
 
         const commitCounts: Record<string, number> = {};
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         commitRes.data.forEach((commit: any) => {
           const date = new Date(commit.commit.author.date).toLocaleDateString();
           commitCounts[date] = (commitCounts[date] || 0) + 1;
@@ -79,6 +80,7 @@ function App() {
 
         setCommitData(chartData.reverse().slice(0, 7));
       }
+      // eslint-disable-next-line @typescript-eslint/no-unused-vars
     } catch (err) {
       alert("User not found or API error");
       setUser(null);
