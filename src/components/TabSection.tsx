@@ -1,11 +1,6 @@
-import {
-  Tabs,
-  TabsList,
-  TabsTrigger,
-  TabsContent,
-} from "../components/ui/tabs";
-import RepoList from "./RepoList";
-import CommitsChart from "./CommitsChart";
+import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
+import RepoList from "@/components/RepoList";
+import CommitsChart from "@/components/CommitsChart";
 
 interface Props {
   repos: any[];

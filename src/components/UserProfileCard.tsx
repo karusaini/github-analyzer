@@ -1,5 +1,4 @@
-import * as React from "react";
-import { Card } from "../components/ui/card";
+import { Card } from "@/components/ui/card";
 
 interface UserProfile {
   avatar_url: string;

@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { Card, CardContent } from "../components/ui/card";
-import { Repo } from "../types";
+import { Card, CardContent } from "@/components/ui/card";
+import { Repo } from "@/types";
 
 interface Props {
   repos: Repo[];
@@ -19,7 +19,9 @@ export default function RepoList({ repos }: Props) {
 
   return (
     <div className="p-4 space-y-4">
-      <h2 className="text-lg font-semibold text-gray-800">Latest Repositories</h2>
+      <h2 className="text-lg font-semibold text-gray-800">
+        Latest Repositories
+      </h2>
 
       {visibleRepos.map((repo) => (
         <Card key={repo.id} className="w-full bg-white shadow-sm border">
